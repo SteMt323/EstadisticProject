@@ -32,6 +32,16 @@ namespace EstadisticProject.Views.ViewsModels
             btn_colaboradores.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_colaboradores.Width, btn_colaboradores.Height, 30, 30));
             btn_objetivo.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_objetivo.Width, btn_objetivo.Height, 30, 30));
             panel_time.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel_time.Width, panel_time.Height, 30, 30));
+            timer1.Interval = 1000; // 1 segundo
+            timer1.Tick += timer1_Tick;
+            timer1.Start();
+
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

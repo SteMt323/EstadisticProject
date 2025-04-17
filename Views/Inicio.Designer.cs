@@ -50,7 +50,7 @@
             this.Btn_Salir.Location = new System.Drawing.Point(701, 12);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(15, 15);
-            this.Btn_Salir.TabIndex = 18;
+            this.Btn_Salir.TabIndex = 1;
             this.Btn_Salir.TabStop = false;
             this.Btn_Salir.UseVisualStyleBackColor = false;
             this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
@@ -102,7 +102,7 @@
             this.btn_start.Location = new System.Drawing.Point(276, 346);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(163, 40);
-            this.btn_start.TabIndex = 22;
+            this.btn_start.TabIndex = 0;
             this.btn_start.Text = "INICIAR";
             this.btn_start.UseVisualStyleBackColor = false;
             this.btn_start.Click += new System.EventHandler(this.btn_start_Click);

@@ -77,7 +77,7 @@
             this.btn_ayuda.Name = "btn_ayuda";
             this.btn_ayuda.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_ayuda.Size = new System.Drawing.Size(236, 60);
-            this.btn_ayuda.TabIndex = 12;
+            this.btn_ayuda.TabIndex = 5;
             this.btn_ayuda.Text = "Ayuda";
             this.btn_ayuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ayuda.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -99,7 +99,7 @@
             this.btn_graficos.Name = "btn_graficos";
             this.btn_graficos.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_graficos.Size = new System.Drawing.Size(236, 60);
-            this.btn_graficos.TabIndex = 11;
+            this.btn_graficos.TabIndex = 4;
             this.btn_graficos.Text = "Gráficos";
             this.btn_graficos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_graficos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -121,7 +121,7 @@
             this.btn_tablas.Name = "btn_tablas";
             this.btn_tablas.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_tablas.Size = new System.Drawing.Size(236, 60);
-            this.btn_tablas.TabIndex = 10;
+            this.btn_tablas.TabIndex = 3;
             this.btn_tablas.Text = "Tablas de Frecuencia";
             this.btn_tablas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_tablas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -143,7 +143,7 @@
             this.btn_cargar_datos.Name = "btn_cargar_datos";
             this.btn_cargar_datos.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_cargar_datos.Size = new System.Drawing.Size(236, 60);
-            this.btn_cargar_datos.TabIndex = 9;
+            this.btn_cargar_datos.TabIndex = 1;
             this.btn_cargar_datos.Text = "Cargar Datos";
             this.btn_cargar_datos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_cargar_datos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -165,7 +165,7 @@
             this.btn_documentacion.Name = "btn_documentacion";
             this.btn_documentacion.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_documentacion.Size = new System.Drawing.Size(236, 60);
-            this.btn_documentacion.TabIndex = 8;
+            this.btn_documentacion.TabIndex = 0;
             this.btn_documentacion.Text = "Inicio";
             this.btn_documentacion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_documentacion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -227,7 +227,7 @@
             this.iconButton5.Location = new System.Drawing.Point(981, 12);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(15, 15);
-            this.iconButton5.TabIndex = 19;
+            this.iconButton5.TabIndex = 6;
             this.iconButton5.TabStop = false;
             this.iconButton5.UseVisualStyleBackColor = false;
             this.iconButton5.Click += new System.EventHandler(this.iconButton5_Click);

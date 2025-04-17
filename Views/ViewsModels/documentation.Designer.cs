@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel_time = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_objetivo = new FontAwesome.Sharp.IconButton();
             this.btn_colaboradores = new FontAwesome.Sharp.IconButton();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_time.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +54,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 30.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(131, 80);
+            this.label1.Location = new System.Drawing.Point(103, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 47);
             this.label1.TabIndex = 21;
@@ -103,11 +106,24 @@
             this.btn_colaboradores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_colaboradores.UseVisualStyleBackColor = true;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(31)))), ((int)(((byte)(58)))));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(32, 189);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(534, 487);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
             // documentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(31)))));
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel_time);
             this.Controls.Add(this.btn_objetivo);
             this.Controls.Add(this.btn_colaboradores);
@@ -126,5 +142,7 @@
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton btn_objetivo;
         private FontAwesome.Sharp.IconButton btn_colaboradores;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
