@@ -37,9 +37,6 @@ namespace EstadisticProject.Views.ViewsModels.HistorialCards
 
         private void HistorialCard_Load(object sender, EventArgs e)
         {
-            panel_fecha.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel_fecha.Width, panel_fecha.Height, 30, 30));
-            panel_accion.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel_accion.Width, panel_accion.Height, 30, 30));
-            panel_estado.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel_estado.Width, panel_estado.Height, 30, 30));
             panel1.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, panel1.Width, panel1.Height, 30, 30));
         }
     }
