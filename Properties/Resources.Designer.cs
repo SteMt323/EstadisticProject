@@ -93,16 +93,6 @@ namespace EstadisticProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap mix_color_dark_purple_0hzlwzpjmpyxbms0 {
-            get {
-                object obj = ResourceManager.GetObject("mix_color_dark_purple_0hzlwzpjmpyxbms0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap simple_colorful_lines_gradient_mixed_e_commerce_texture_background_6221984 {
             get {
                 object obj = ResourceManager.GetObject("simple_colorful_lines_gradient_mixed_e_commerce_texture_background_6221984", resourceCulture);

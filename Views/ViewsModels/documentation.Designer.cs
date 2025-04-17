@@ -29,21 +29,45 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.flp_historial = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_time = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_objetivo = new FontAwesome.Sharp.IconButton();
             this.btn_colaboradores = new FontAwesome.Sharp.IconButton();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel_time.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // flp_historial
+            // 
+            this.flp_historial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(31)))), ((int)(((byte)(58)))));
+            this.flp_historial.Location = new System.Drawing.Point(32, 244);
+            this.flp_historial.Name = "flp_historial";
+            this.flp_historial.Size = new System.Drawing.Size(534, 419);
+            this.flp_historial.TabIndex = 9;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.BackgroundImage = global::EstadisticProject.Properties.Resources.wallpaper;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1008, 137);
+            this.panel1.TabIndex = 10;
             // 
             // panel_time
             // 
             this.panel_time.BackgroundImage = global::EstadisticProject.Properties.Resources.color_jpg;
             this.panel_time.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel_time.Controls.Add(this.label1);
-            this.panel_time.Location = new System.Drawing.Point(598, 32);
+            this.panel_time.Location = new System.Drawing.Point(598, 78);
             this.panel_time.Name = "panel_time";
             this.panel_time.Size = new System.Drawing.Size(378, 192);
             this.panel_time.TabIndex = 7;
@@ -73,7 +97,7 @@
             this.btn_objetivo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_objetivo.IconSize = 50;
             this.btn_objetivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_objetivo.Location = new System.Drawing.Point(308, 32);
+            this.btn_objetivo.Location = new System.Drawing.Point(308, 78);
             this.btn_objetivo.Name = "btn_objetivo";
             this.btn_objetivo.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_objetivo.Size = new System.Drawing.Size(258, 130);
@@ -96,7 +120,7 @@
             this.btn_colaboradores.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_colaboradores.IconSize = 50;
             this.btn_colaboradores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_colaboradores.Location = new System.Drawing.Point(32, 32);
+            this.btn_colaboradores.Location = new System.Drawing.Point(32, 78);
             this.btn_colaboradores.Name = "btn_colaboradores";
             this.btn_colaboradores.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_colaboradores.Size = new System.Drawing.Size(244, 130);
@@ -106,27 +130,16 @@
             this.btn_colaboradores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_colaboradores.UseVisualStyleBackColor = true;
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(31)))), ((int)(((byte)(58)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(32, 189);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(534, 487);
-            this.flowLayoutPanel1.TabIndex = 9;
-            // 
             // documentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(31)))));
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flp_historial);
             this.Controls.Add(this.panel_time);
             this.Controls.Add(this.btn_objetivo);
             this.Controls.Add(this.btn_colaboradores);
+            this.Controls.Add(this.panel1);
             this.Name = "documentation";
             this.Size = new System.Drawing.Size(1008, 706);
             this.Load += new System.EventHandler(this.documentation_Load);
@@ -143,6 +156,7 @@
         private FontAwesome.Sharp.IconButton btn_objetivo;
         private FontAwesome.Sharp.IconButton btn_colaboradores;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flp_historial;
+        private System.Windows.Forms.Panel panel1;
     }
 }

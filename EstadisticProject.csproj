@@ -84,12 +84,19 @@
     <Compile Include="Views\ViewsModels\documentation.Designer.cs">
       <DependentUpon>documentation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ViewsModels\HistorialCards\HistorialCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ViewsModels\HistorialCards\HistorialCard.Designer.cs">
+      <DependentUpon>HistorialCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\ViewsModels\principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\ViewsModels\principal.Designer.cs">
       <DependentUpon>principal.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\mix-color-dark-purple-0hzlwzpjmpyxbms01.jpg" />
     <None Include="Resources\simple-colorful-lines-gradient-mixed-e-commerce-texture-background_6221984.jpg" />
     <None Include="Resources\mix-color-dark-purple-0hzlwzpjmpyxbms0.jpg" />
     <None Include="Resources\color.jpg.jpg" />
@@ -98,6 +105,9 @@
     <None Include="Resources\logo.png" />
     <EmbeddedResource Include="Views\ViewsModels\documentation.resx">
       <DependentUpon>documentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ViewsModels\HistorialCards\HistorialCard.resx">
+      <DependentUpon>HistorialCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ViewsModels\principal.resx">
       <DependentUpon>principal.cs</DependentUpon>
