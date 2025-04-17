@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.flp_historial = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_time = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_objetivo = new FontAwesome.Sharp.IconButton();
             this.btn_colaboradores = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel_time.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,21 +46,10 @@
             // flp_historial
             // 
             this.flp_historial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(31)))), ((int)(((byte)(58)))));
-            this.flp_historial.Location = new System.Drawing.Point(32, 244);
+            this.flp_historial.Location = new System.Drawing.Point(32, 317);
             this.flp_historial.Name = "flp_historial";
-            this.flp_historial.Size = new System.Drawing.Size(534, 419);
+            this.flp_historial.Size = new System.Drawing.Size(534, 314);
             this.flp_historial.TabIndex = 9;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.BackgroundImage = global::EstadisticProject.Properties.Resources.wallpaper;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 137);
-            this.panel1.TabIndex = 10;
             // 
             // panel_time
             // 
@@ -78,7 +67,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 30.25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(103, 78);
+            this.label1.Location = new System.Drawing.Point(101, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 47);
             this.label1.TabIndex = 21;
@@ -129,6 +118,17 @@
             this.btn_colaboradores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_colaboradores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_colaboradores.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.BackgroundImage = global::EstadisticProject.Properties.Resources.wallpaper;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1008, 137);
+            this.panel1.TabIndex = 10;
             // 
             // documentation
             // 

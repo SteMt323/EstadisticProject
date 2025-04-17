@@ -58,7 +58,7 @@
             this.label_accion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(213)))), ((int)(((byte)(219)))));
             this.label_accion.Location = new System.Drawing.Point(0, 0);
             this.label_accion.Name = "label_accion";
-            this.label_accion.Size = new System.Drawing.Size(324, 73);
+            this.label_accion.Size = new System.Drawing.Size(506, 73);
             this.label_accion.TabIndex = 8;
             this.label_accion.Text = "ACCION";
             // 
@@ -88,21 +88,22 @@
             this.panel_accion.Controls.Add(this.label_accion);
             this.panel_accion.Location = new System.Drawing.Point(13, 64);
             this.panel_accion.Name = "panel_accion";
-            this.panel_accion.Size = new System.Drawing.Size(327, 73);
+            this.panel_accion.Size = new System.Drawing.Size(509, 73);
             this.panel_accion.TabIndex = 11;
             // 
             // panel_estado
             // 
             this.panel_estado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(58)))), ((int)(((byte)(237)))));
             this.panel_estado.Controls.Add(this.label_estado);
-            this.panel_estado.Location = new System.Drawing.Point(358, 109);
+            this.panel_estado.Location = new System.Drawing.Point(358, 16);
             this.panel_estado.Name = "panel_estado";
-            this.panel_estado.Size = new System.Drawing.Size(164, 28);
+            this.panel_estado.Size = new System.Drawing.Size(164, 35);
             this.panel_estado.TabIndex = 12;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::EstadisticProject.Properties.Resources.mix_color_abstract_gradient_texture_with_mixed_colors_9930396;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);

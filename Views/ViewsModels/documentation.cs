@@ -39,6 +39,7 @@ namespace EstadisticProject.Views.ViewsModels
             timer1.Start();
 
             AgregarHistorial("16/04/2025", "Generó tabla de frecuencias", "✔ Éxito");
+            AgregarHistorial("14/04/2025", "Exportó reporte PDF", "⚠ Advertencia");
         }
 
         private void timer1_Tick(object sender, EventArgs e)

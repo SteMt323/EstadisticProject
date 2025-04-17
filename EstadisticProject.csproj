@@ -96,6 +96,7 @@
     <Compile Include="Views\ViewsModels\principal.Designer.cs">
       <DependentUpon>principal.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\mix-color-abstract-gradient-texture-with-mixed-colors_9930396.jpg" />
     <None Include="Resources\mix-color-dark-purple-0hzlwzpjmpyxbms01.jpg" />
     <None Include="Resources\simple-colorful-lines-gradient-mixed-e-commerce-texture-background_6221984.jpg" />
     <None Include="Resources\mix-color-dark-purple-0hzlwzpjmpyxbms0.jpg" />
