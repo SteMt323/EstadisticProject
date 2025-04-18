@@ -9,6 +9,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Text.Json;
 
 namespace EstadisticProject.Views.ViewsModels
 {
@@ -23,9 +25,17 @@ namespace EstadisticProject.Views.ViewsModels
         int nWidthEllipse,  // width of ellipse
         int nHeightEllipse  // height of ellipse
         );
+
+        public class HistorialEntry
+        {
+            public string fecha { get; set; }
+            public string accion { get; set; }
+            public string estado { get; set; }
+        }
         public documentation()
         {
             InitializeComponent();
+            CargarHistorialDashboard();
         }
 
         private void documentation_Load(object sender, EventArgs e)
@@ -37,9 +47,6 @@ namespace EstadisticProject.Views.ViewsModels
             timer1.Interval = 1000; // 1 segundo
             timer1.Tick += timer1_Tick;
             timer1.Start();
-
-            AgregarHistorial("16/04/2025", "Generó tabla de frecuencias", "✔ Éxito");
-            AgregarHistorial("14/04/2025", "Exportó reporte PDF", "⚠ Advertencia");
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -52,6 +59,34 @@ namespace EstadisticProject.Views.ViewsModels
             HistorialCard card = new HistorialCard();
             card.SetData(fecha, accion, estado);
             flp_historial.Controls.Add(card);
+        }
+
+        private void CargarHistorialDashboard()
+        {
+            string rutaProyecto = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\.."));
+            string rutaHistorial = Path.Combine(rutaProyecto, "AppData", "CacheH", "Historial.json");
+
+            if (File.Exists(rutaHistorial))
+            {
+                string json = File.ReadAllText(rutaHistorial);
+
+                List<HistorialEntry> historial = JsonSerializer.Deserialize<List<HistorialEntry>>(json);
+
+                // Tomar los 2 últimos registros
+                var ultimos = historial.OrderByDescending(e => e.fecha).Take(2);
+
+                flp_historial.Controls.Clear();
+
+                foreach (var entrada in ultimos)
+                {
+                    AgregarHistorial(entrada.fecha, entrada.accion, entrada.estado == "Exito" ? "✔ Exito" : "✖ Error");
+                }
+            }
+            else
+            {
+                // Si no hay historial, opcionalmente mostrar algo por defecto
+                AgregarHistorial(DateTime.Now.ToString("dd/MM/yyyy HH:mm"), "Sin historial aún", "—");
+            }
         }
     }
 }

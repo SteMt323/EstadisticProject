@@ -86,9 +86,9 @@
             this.label2.ForeColor = System.Drawing.Color.Gainsboro;
             this.label2.Location = new System.Drawing.Point(181, 271);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(359, 19);
+            this.label2.Size = new System.Drawing.Size(348, 19);
             this.label2.TabIndex = 21;
-            this.label2.Text = "Projecto para automatizar ejercicios de estadistica";
+            this.label2.Text = "Projecto automatización de procesos estadísticos";
             // 
             // btn_start
             // 

@@ -36,6 +36,7 @@
             this.btn_objetivo = new FontAwesome.Sharp.IconButton();
             this.btn_colaboradores = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label_historial = new System.Windows.Forms.Label();
             this.panel_time.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,7 +123,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.BackgroundImage = global::EstadisticProject.Properties.Resources.wallpaper;
+            this.panel1.BackgroundImage = global::EstadisticProject.Properties.Resources.wallpaper2;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -130,11 +131,24 @@
             this.panel1.Size = new System.Drawing.Size(1008, 137);
             this.panel1.TabIndex = 10;
             // 
+            // label_historial
+            // 
+            this.label_historial.AutoSize = true;
+            this.label_historial.BackColor = System.Drawing.Color.Transparent;
+            this.label_historial.Font = new System.Drawing.Font("Century Gothic", 30.25F, System.Drawing.FontStyle.Bold);
+            this.label_historial.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label_historial.Location = new System.Drawing.Point(34, 267);
+            this.label_historial.Name = "label_historial";
+            this.label_historial.Size = new System.Drawing.Size(214, 47);
+            this.label_historial.TabIndex = 22;
+            this.label_historial.Text = "HISTORIAL";
+            // 
             // documentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(31)))));
+            this.Controls.Add(this.label_historial);
             this.Controls.Add(this.flp_historial);
             this.Controls.Add(this.panel_time);
             this.Controls.Add(this.btn_objetivo);
@@ -146,6 +160,7 @@
             this.panel_time.ResumeLayout(false);
             this.panel_time.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -158,5 +173,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.FlowLayoutPanel flp_historial;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label_historial;
     }
 }

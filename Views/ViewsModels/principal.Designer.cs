@@ -206,6 +206,7 @@
             this.btn_cargar_datos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_cargar_datos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_cargar_datos.UseVisualStyleBackColor = true;
+            this.btn_cargar_datos.Click += new System.EventHandler(this.btn_cargar_datos_Click);
             // 
             // btn_documentacion
             // 

@@ -75,5 +75,14 @@ namespace EstadisticProject.Views.ViewsModels
             documentation.Dock = DockStyle.Fill;
             panel_content.Controls.Add(documentation);
         }
+
+        private void btn_cargar_datos_Click(object sender, EventArgs e)
+        {
+            Cargar_Datos cargar_Datos = new Cargar_Datos();
+            panel_content.Controls.Clear();
+
+            cargar_Datos.Dock = DockStyle.Fill;
+            panel_content.Controls.Add(cargar_Datos);
+        }
     }
 }
