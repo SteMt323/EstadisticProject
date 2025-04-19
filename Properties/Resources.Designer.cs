@@ -63,6 +63,16 @@ namespace EstadisticProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _181655_free_download_black_abstract_wallpaper_1920x1200_for_hd_1080p {
+            get {
+                object obj = ResourceManager.GetObject("181655-free-download-black-abstract-wallpaper-1920x1200-for-hd-1080p", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap abstract_mixed_pastel_colors_background_free_vector {
             get {
                 object obj = ResourceManager.GetObject("abstract_mixed_pastel_colors_background_free_vector", resourceCulture);
@@ -96,6 +106,16 @@ namespace EstadisticProject.Properties {
         internal static System.Drawing.Bitmap mix_color_abstract_gradient_texture_with_mixed_colors_9930396 {
             get {
                 object obj = ResourceManager.GetObject("mix-color-abstract-gradient-texture-with-mixed-colors_9930396", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sea_edge_79ab30e2 {
+            get {
+                object obj = ResourceManager.GetObject("sea-edge-79ab30e2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

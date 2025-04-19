@@ -84,5 +84,14 @@ namespace EstadisticProject.Views.ViewsModels
             cargar_Datos.Dock = DockStyle.Fill;
             panel_content.Controls.Add(cargar_Datos);
         }
+
+        private void btn_tablas_Click(object sender, EventArgs e)
+        {
+            TableFrecuencies tableFrecuencies = new TableFrecuencies();
+            panel_content.Controls.Clear();
+
+            tableFrecuencies.Dock = DockStyle.Fill;
+            panel_content.Controls.Add(tableFrecuencies);
+        }
     }
 }

@@ -133,6 +133,35 @@
     <Compile Include="Views\ViewsModels\principal.Designer.cs">
       <DependentUpon>principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ViewsModels\TableFrecuencies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ViewsModels\TableFrecuencies.Designer.cs">
+      <DependentUpon>TableFrecuencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewsModels\TableFrecuenciesLoads\SearchData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ViewsModels\TableFrecuenciesLoads\SearchData.Designer.cs">
+      <DependentUpon>SearchData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ViewsModels\TableFrecuenciesLoads\TableContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ViewsModels\TableFrecuenciesLoads\TableContainer.Designer.cs">
+      <DependentUpon>TableContainer.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\sea-edge-79ab30e2.png" />
+    <None Include="Resources\181655-free-download-black-abstract-wallpaper-1920x1200-for-hd-1080p.jpg" />
+    <EmbeddedResource Include="Views\ViewsModels\TableFrecuencies.resx">
+      <DependentUpon>TableFrecuencies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ViewsModels\TableFrecuenciesLoads\SearchData.resx">
+      <DependentUpon>SearchData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ViewsModels\TableFrecuenciesLoads\TableContainer.resx">
+      <DependentUpon>TableContainer.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Resources\wallpaper2.jpg" />
     <None Include="Resources\mix-color-abstract-gradient-texture-with-mixed-colors_9930396.jpg" />
     <None Include="Resources\mix-color-dark-purple-0hzlwzpjmpyxbms01.jpg" />

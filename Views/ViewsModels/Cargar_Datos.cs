@@ -152,6 +152,7 @@ namespace EstadisticProject.Views.ViewsModels
                     MessageBox.Show("No se adjuntó un archivo ni se ingresaron datos manuales válidos.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
+                // ____________________________________________________________________________
                 // Registrar en historial (si hubo una acción, exitosa o fallida)
                 if (!string.IsNullOrEmpty(tipoAction))
                 {
