@@ -38,6 +38,8 @@ namespace EstadisticProject.Views.ViewsModels
             SearchData searchData = new SearchData();
             searchData.ShowDialog();
 
+            // Masivo?
+
             string nombreArchivoSeleccionado = searchData.ArchivoSeleccionado;
             TableContainer tableContainer = new TableContainer(nombreArchivoSeleccionado);
             pnl_table.Controls.Clear();
