@@ -14,6 +14,8 @@ namespace EstadisticProject.Views.ViewsModels.TableFrecuenciesLoads
 {
     public partial class SearchData : Form
     {
+        public string ArchivoSeleccionado { get; private set; } = "";
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
         int nLeftRect,      // X-coordinate of upper-left corner
@@ -100,6 +102,20 @@ namespace EstadisticProject.Views.ViewsModels.TableFrecuenciesLoads
                 var filaSeleccionada = dataGridView1.SelectedRows[0];
                 
                 label1.Text = filaSeleccionada.Cells[0].Value != null ? filaSeleccionada.Cells[0].Value.ToString() : "N/A";
+            }
+        }
+
+        private void btn_cargar_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(label1.Text) && label1.Text != "File Name...")
+            {
+                ArchivoSeleccionado = label1.Text;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Selecciona un archivo antes de continuar", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

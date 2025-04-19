@@ -37,6 +37,11 @@ namespace EstadisticProject.Views.ViewsModels
         {
             SearchData searchData = new SearchData();
             searchData.ShowDialog();
+
+            string nombreArchivoSeleccionado = searchData.ArchivoSeleccionado;
+            TableContainer tableContainer = new TableContainer(nombreArchivoSeleccionado);
+            pnl_table.Controls.Clear();
+            pnl_table.Controls.Add(tableContainer);
         }
     }
 }

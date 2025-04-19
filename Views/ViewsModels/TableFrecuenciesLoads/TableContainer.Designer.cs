@@ -33,14 +33,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.intervals_nums = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Limite_inferior = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Limite_superior = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Marca_clase = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Frecuencia_absoluta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Frecuencia_relativa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Frecuencia_absoluta_acumulada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Frecuencia_relativa_acumulada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.K = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Li = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ls = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fii = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,14 +65,14 @@
             this.dataGridView1.ColumnHeadersHeight = 35;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.intervals_nums,
-            this.Limite_inferior,
-            this.Limite_superior,
-            this.Marca_clase,
-            this.Frecuencia_absoluta,
-            this.Frecuencia_relativa,
-            this.Frecuencia_absoluta_acumulada,
-            this.Frecuencia_relativa_acumulada});
+            this.K,
+            this.Li,
+            this.Ls,
+            this.X,
+            this.fi,
+            this.Fr,
+            this.Fii,
+            this.Fra});
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
@@ -98,53 +98,53 @@
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.TabStop = false;
             // 
-            // intervals_nums
+            // K
             // 
-            this.intervals_nums.HeaderText = "K";
-            this.intervals_nums.Name = "intervals_nums";
-            this.intervals_nums.ReadOnly = true;
+            this.K.HeaderText = "K";
+            this.K.Name = "K";
+            this.K.ReadOnly = true;
             // 
-            // Limite_inferior
+            // Li
             // 
-            this.Limite_inferior.HeaderText = "Li";
-            this.Limite_inferior.Name = "Limite_inferior";
-            this.Limite_inferior.ReadOnly = true;
+            this.Li.HeaderText = "Li";
+            this.Li.Name = "Li";
+            this.Li.ReadOnly = true;
             // 
-            // Limite_superior
+            // Ls
             // 
-            this.Limite_superior.HeaderText = "Ls";
-            this.Limite_superior.Name = "Limite_superior";
-            this.Limite_superior.ReadOnly = true;
+            this.Ls.HeaderText = "Ls";
+            this.Ls.Name = "Ls";
+            this.Ls.ReadOnly = true;
             // 
-            // Marca_clase
+            // X
             // 
-            this.Marca_clase.HeaderText = "X";
-            this.Marca_clase.Name = "Marca_clase";
-            this.Marca_clase.ReadOnly = true;
+            this.X.HeaderText = "X";
+            this.X.Name = "X";
+            this.X.ReadOnly = true;
             // 
-            // Frecuencia_absoluta
+            // fi
             // 
-            this.Frecuencia_absoluta.HeaderText = "fi";
-            this.Frecuencia_absoluta.Name = "Frecuencia_absoluta";
-            this.Frecuencia_absoluta.ReadOnly = true;
+            this.fi.HeaderText = "fi";
+            this.fi.Name = "fi";
+            this.fi.ReadOnly = true;
             // 
-            // Frecuencia_relativa
+            // Fr
             // 
-            this.Frecuencia_relativa.HeaderText = "Fr";
-            this.Frecuencia_relativa.Name = "Frecuencia_relativa";
-            this.Frecuencia_relativa.ReadOnly = true;
+            this.Fr.HeaderText = "Fr (%)";
+            this.Fr.Name = "Fr";
+            this.Fr.ReadOnly = true;
             // 
-            // Frecuencia_absoluta_acumulada
+            // Fii
             // 
-            this.Frecuencia_absoluta_acumulada.HeaderText = "Fi";
-            this.Frecuencia_absoluta_acumulada.Name = "Frecuencia_absoluta_acumulada";
-            this.Frecuencia_absoluta_acumulada.ReadOnly = true;
+            this.Fii.HeaderText = "Fi";
+            this.Fii.Name = "Fii";
+            this.Fii.ReadOnly = true;
             // 
-            // Frecuencia_relativa_acumulada
+            // Fra
             // 
-            this.Frecuencia_relativa_acumulada.HeaderText = "Fra";
-            this.Frecuencia_relativa_acumulada.Name = "Frecuencia_relativa_acumulada";
-            this.Frecuencia_relativa_acumulada.ReadOnly = true;
+            this.Fra.HeaderText = "Fra (%)";
+            this.Fra.Name = "Fra";
+            this.Fra.ReadOnly = true;
             // 
             // TableContainer
             // 
@@ -162,13 +162,13 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn intervals_nums;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Limite_inferior;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Limite_superior;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Marca_clase;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Frecuencia_absoluta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Frecuencia_relativa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Frecuencia_absoluta_acumulada;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Frecuencia_relativa_acumulada;
+        private System.Windows.Forms.DataGridViewTextBoxColumn K;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Li;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ls;
+        private System.Windows.Forms.DataGridViewTextBoxColumn X;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fii;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fra;
     }
 }
