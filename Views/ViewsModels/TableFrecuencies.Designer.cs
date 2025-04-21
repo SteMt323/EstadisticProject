@@ -38,7 +38,7 @@
             this.pnl_table.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(38)))));
             this.pnl_table.Location = new System.Drawing.Point(63, 196);
             this.pnl_table.Name = "pnl_table";
-            this.pnl_table.Size = new System.Drawing.Size(880, 455);
+            this.pnl_table.Size = new System.Drawing.Size(880, 462);
             this.pnl_table.TabIndex = 14;
             // 
             // panel1

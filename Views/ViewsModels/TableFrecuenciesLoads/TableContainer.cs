@@ -8,11 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace EstadisticProject.Views.ViewsModels.TableFrecuenciesLoads
 {
     public partial class TableContainer : UserControl
     {
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+        int nLeftRect,      // X-coordinate of upper-left corner
+        int nTopRect,       // Y-coordinate of upper-left corner
+        int nRightRect,     // X-coordinate of lower-right corner
+        int nBottomRect,    // Y-coordinate of lower-right corner
+        int nWidthEllipse,  // width of ellipse
+        int nHeightEllipse  // height of ellipse
+        );
         private string archivoCSV;
         public TableContainer(string nombreArchivo)
         {
@@ -140,6 +150,52 @@ namespace EstadisticProject.Views.ViewsModels.TableFrecuenciesLoads
             filaTotal.DefaultCellStyle.Font = new Font(dataGridView1.Font, FontStyle.Bold);
             filaTotal.DefaultCellStyle.ForeColor = Color.Black;
 
+        }
+
+        private void ExportarDataGridView(DataGridView dgv, string rutaArchivo)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(rutaArchivo, false, Encoding.UTF8))
+                {
+                    // Escribir encabezados
+                    var headers = dgv.Columns.Cast<DataGridViewColumn>();
+                    writer.WriteLine(string.Join(";", headers.Select(column => column.HeaderText)));
+
+                    // Escribir las filas
+                    foreach (DataGridViewRow row in dgv.Rows)
+                    {
+                        if (!row.IsNewRow)
+                        {
+                            var cells = row.Cells.Cast<DataGridViewCell>();
+                            writer.WriteLine(string.Join(";", cells.Select(cell => cell.Value?.ToString().Replace(";", ",") ?? "")));
+                        }
+                    }
+                }
+
+                MessageBox.Show("CSV exportado correctamente.", "Exportación completada", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al exportar: {ex.Message}");
+            }
+        }
+
+        private void TableContainer_Load(object sender, EventArgs e)
+        {
+            btn_exportar.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btn_exportar.Width, btn_exportar.Height, 30, 30));
+        }
+
+        private void btn_exportar_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "CSV files (*.csv)|*.csv";
+            saveFileDialog.Title = "Guardar archivo CSV";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                ExportarDataGridView(dataGridView1, saveFileDialog.FileName);
+            }
         }
     }
 }
